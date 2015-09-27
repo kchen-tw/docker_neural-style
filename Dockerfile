@@ -10,7 +10,7 @@ RUN curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-dep
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 WORKDIR /root/torch
 RUN /root/torch/install.sh
-RUN source ~/.bashrc
+RUN /bin/bash -c source ~/.bashrc
 
 # Install loadcaffe
 RUN apt-get install -y libprotobuf-dev protobuf-compiler
