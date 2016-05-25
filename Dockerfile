@@ -21,3 +21,4 @@ RUN git clone --depth 1 https://github.com/jcjohnson/neural-style.git
 WORKDIR /root/neural-style
 RUN sh models/download_models.sh
 
+ADD /home/ /home_root/
